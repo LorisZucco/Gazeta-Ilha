@@ -156,15 +156,58 @@ button {
   color: #9c2a1f;
   margin-top: auto;
 }
+.most-read {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.read-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid #ddd7cb;
+  padding-bottom: 12px;
+}
+.read-number {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #9c2a1f;
+}
+
+.read-item p {
+  font-size: 15px;
+  line-height: 1.35;
+}
+.headline-text {
+  flex: 1;
+}
+
+@media (min-width: 720px) {
+  .headline {
+    flex-direction: row;
+  }
+  .stories {
+    flex-direction: row;
+  }
+
+  .story {
+    flex: 1;
+  }
+}
+
 @media (min-width: 1080px) {
   body {
     max-width: 1120px;
   }
-  .headline {
-    flex-direction: row;
-  }
+
   .headline-photo {
     width: 300px;
     height: 220px;
+  }
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
